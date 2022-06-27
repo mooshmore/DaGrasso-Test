@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizzeria Da Grasso</title>
+    <link rel="icon" href="images/Icons/logo-header.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img id="banner_logo" src="images/Icons/logo-web.png">
+            <div class="city">
+                <span class="city_name">
+                    STARGARD
+                </span>
+                <img class="banner_facebook" src="images/Icons/facebook.png" alt="facebook">
+            </div>
+            <div class="banner_text adress">
+                Mickiewicza 2, Stargard
+            </div>
+            <div class="banner_text number">
+                tel. 504 907 061, 91 836 96 66
+            </div>
+            <div class="banner_double">
+                <div class="banner_text open">
+                    Otwarte (do 23:00)
+                    <img class="open_hours_button" src="images/Icons/dropdown.png">
+                    <div class="open_hours">
+                        <table>
+                            <tr>
+                                <th>pon - pt</th>
+                                <td>11:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <th>sob</th>
+                                <td>11:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>pon - pt</th>
+                                <td>12:00 - 23:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="banner_text details">
+                    Szczegóły lokalu
+                </div>
+            </div> 
+        </div>
+        <header>
+            <img class="header-logo-desktop" src="images/Icons/logo-header.png">
+            <div class="header_menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">PIZZA</a></li>
+                        <li><a href="#">STARTERY</a></li>
+                        <li><a href="#">SAŁATY</a></li>
+                        <li><a href="#">DANIA</a></li>
+                        <li><a href="#">DESERY</a></li>
+                        <li><a href="#">NAPOJE</a></li>
+                        <li><a href="#">PROMOCJE</a></li>
+                    </ul>
+                </nav>
+                <div class="shadow"></div>
+            </div>
+            <img class="hamburger" src="images/Icons/hamburger.png" alt="menu">
+            <img class="header_logo" src="images/Icons/logo-mobile2.png" alt="logo">
+            <div class="header_cart">
+                <span class="item_count">0</span>
+                <img src="images/Icons/cart.png" alt="cart">
+            </div>
+        </header>
+        <main>
+            <div class="select">
+                <select name="typ">
+                    <option value="polecane">Filtruj</option>
+                    <option value="polecane">Polecane</option>
+                    <option value="tradycyjne">Tradycyjne</option>
+                    <option value="ostro">Na ostro</option>
+                    <option value="wegetarianska">Wegetariańska</option>
+                    <option value="morze_ryby">Owoce morza i ryby</option>
+                    <option value="mieso">Z mięsem</option>
+                </select>
+                <h4>Filtruj:</h4>
+                <ul>
+                    <li>
+                        <img src="images/Icons/polecane.png">
+                        Polecane
+                    </li>
+                    <li>
+                        <img src="images/Icons/tradycyjna.png">
+                        Tradycyjne
+                    </li>
+                    <li>
+                        <img src="images/Icons/na_ostro.png">
+                        Na ostro
+                    </li>
+                    <li>
+                        <img src="images/Icons/wegetarianska.png">
+                        Wegetariańska
+                    </li>
+                    <li>
+                        <img src="images/Icons/owoce_morza.png">
+                        Owoce morza i ryby
+                    </li>
+                    <li>
+                        <img src="images/Icons/owoce_morza.png">
+                        Z mięsem
+                    </li>
+                </ul>
+            </div>
+            <div class="items_container">
+                <!-- Pizza -->
+                <section class="menu" aria-label="Pizze"> 
+                    <div class="menu_title">
+                        <h3>Pizze</h3>
+                        <img class="menu_dropdown" src="images/Icons/dropdown.png" alt="dropdown menu">
+                    </div>
+                    <div class="menu_item_list">
+                        <div class="menu_item">
+                            <div class="menu_item_description special_bottom_1">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Pizze/01-2.png" alt="Pizza">
+                            <div class="menu_item_name">Margherita</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="Duża 42cm">Duża 42cm 38,50 zł</option>
+                                    <option value="Średnia 32cm">Średnia 32cm 32,50 zł</option>
+                                    <option value="Mała 24cm">Mala 24cm 22,40 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>Duża 42cm</th>
+                                        <td>38,50 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Średnia 32cm</th>
+                                        <td>32,50 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mala 24cm</th>
+                                        <td>22,40 zł</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <ul></ul>
+
+                            <button class="menu_item_button">
+                                38,50 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description special_bottom_2">
+                                <div class="description_text">
+                                ciasto, sos pomidorowy, ser, szynka, pieczarki, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Pizze/02-2.png" alt="Pizza">
+                            <div class="menu_item_name">Capriciosa</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="Duża 42cm">Duża 42cm 38,50 zł</option>
+                                    <option value="Średnia 32cm">Średnia 32cm 32,50 zł</option>
+                                    <option value="Mała 24cm">Mala 24cm 22,40 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>Duża 42cm</th>
+                                        <td>38,50 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Średnia 32cm</th>
+                                        <td>32,50 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mala 24cm</th>
+                                        <td>22,40 zł</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                38,50 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                ciasto, sos pomidorowy, ser mozarella, szynka dojrzewająca, bazylia świerza, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Pizze/03-2.png" alt="Pizza">
+                            <div class="menu_item_name">Parma</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="Duża 42cm">Duża 42cm 38,50 zł</option>
+                                    <option value="Średnia 32cm">Średnia 32cm 32,50 zł</option>
+                                    <option value="Mała 24cm">Mala 24cm 22,40 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>Duża 42cm</th>
+                                        <td>38,50 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Średnia 32cm</th>
+                                        <td>32,50 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mala 24cm</th>
+                                        <td>22,40 zł</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                38,50 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, szynka, pieczarki, papryka konserwowa, czosnek, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Pizze/04-2.png" alt="Pizza">
+                            <div class="menu_item_name">Campione</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="Duża 42cm">Duża 42cm 38,50 zł</option>
+                                    <option value="Średnia 32cm">Średnia 32cm 32,50 zł</option>
+                                    <option value="Mała 24cm">Mala 24cm 22,40 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>Duża 42cm</th>
+                                        <td>38,50 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Średnia 32cm</th>
+                                        <td>32,50 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mala 24cm</th>
+                                        <td>22,40 zł</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                38,50 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, szynka, pieczarki, papryka konserwowa, czosnek, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Pizze/05-2.png" alt="Pizza">
+                            <div class="menu_item_name">Decoro</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="Duża 42cm">Duża 42cm 38,50 zł</option>
+                                    <option value="Średnia 32cm">Średnia 32cm 32,50 zł</option>
+                                    <option value="Mała 24cm">Mala 24cm 22,40 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>Duża 42cm</th>
+                                        <td>38,50 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Średnia 32cm</th>
+                                        <td>32,50 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mala 24cm</th>
+                                        <td>22,40 zł</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                38,50 zł
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Burgery -->
+                <section class="menu" aria-label="Burgery"> 
+                    <div class="menu_title">
+                        <h3>Burgery</h3>
+                        <img class="menu_dropdown" src="images/Icons/dropdown.png" alt="dropdown menu">
+                    </div>
+                    <div class="menu_item_list">
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Burgery/121.png" alt="Pizza">
+                            <div class="menu_item_name">121. Classic Burger</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1 szt. 16,60 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>1 szt.</th>
+                                        <td>16,60 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                16,60 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, szynka, pieczarki, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Burgery/122.png" alt="Pizza">
+                            <div class="menu_item_name">122. Spicy burger</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1 szt. 18,50 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>1 szt.</th>
+                                        <td>16,60 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                18,50 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser mozarella, szynka dojrzewająca, bazylia świerza, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Burgery/123.png" alt="Pizza">
+                            </picture>
+                            <div class="menu_item_name">Cheese Bacon Double Burger</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1 szt. 26,50 zł</option>
+                                </select>
+                                <table class="list_select">
+                                    <tr class="active">
+                                        <th>1 szt.</th>
+                                        <td>16,60 zł</td>
+                                        <td>&#10004;</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="menu_item_button">
+                                26,10 zł
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Makarony -->
+                <section class="menu" aria-label="Makarony"> 
+                    <div class="menu_title">
+                        <h3>Makarony</h3>
+                        <img class="menu_dropdown" src="images/Icons/dropdown.png" alt="dropdown menu">
+                    </div>
+                    <div class="menu_item_list">
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Makarony/mak-75-2.png" alt="Pizza">
+                            <div class="menu_item_name">Crema Fungo</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1szt. 23,90 zł</option>
+                                </select>
+                            </div>
+
+                            <button class="menu_item_button">
+                                23,90
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Makarony/mak-76-2.png" alt="Pizza">
+                            </picture>
+                            <div class="menu_item_name">Arabiata</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1szt. 19,40 zł</option>
+                                </select>
+                            </div>
+
+                            <button class="menu_item_button">
+                                19,40 zł
+                            </button>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item_description">
+                                <div class="description_text">
+                                    ciasto, sos pomidorowy, ser, oregano
+                                </div>
+                            </div>
+                            <img class="menu_item_img" src="images/Makarony/mak-77-2.png" alt="Pizza">
+                            </picture>
+                            <div class="menu_item_name">Bolognese</div>
+                            <div class="size_select">
+                                <select class="menu_item_size" name="rozmiar">
+                                    <option value="1szt">1szt. 20,50 zł</option>
+                                </select>
+                            </div>
+
+                            <button class="menu_item_button">
+                                20,50 zł
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="cart_div">
+                <div class="cart_header">
+                    <img src="images/Icons/cart.png" alt="cart">
+                    KOSZYK
+                </div>
+                <div class="cart_total">
+                    <span>Razem</span>
+                    <span>0 zł</span>
+                </div>
+                <button>Zamów</button>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Mapa strony</a></li>
+                <li><a href="#">Promocje</a></li>
+                <li><a href="#">Da Grasso Sieć Pizzeri</a></li>
+                <li><a href="#">Wykaz składników</a></li>
+                <li><a href="#">Alergeny i wartość kcal</a></li>
+                <li><a href="#">Polityka prywatności</a></li>
+                <li><a href="#">Regulamin</a></li>
+            </ul>
+            <p>Polub nas na</p>
+            <a href="facebook.com">
+                <img src="images/Icons/faceboook-black.png" target="_blank">
+            </a>
+            <a href="instagram.com">
+                <img src="images/Icons/instagram-icon.png" target="_blank">
+            </a>
+            <p>Realizacja Da muchomore</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
